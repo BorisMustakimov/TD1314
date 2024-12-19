@@ -1,4 +1,4 @@
-module todolist
+module github.com/BorisMustakimov/TD1314
 
 go 1.23.1
 

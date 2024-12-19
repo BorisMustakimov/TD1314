@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/BorisMustakimov/TD1314/config"
-	hendlers "github.com/BorisMustakimov/TD1314/handlers"
+	hendlers "github.com/BorisMustakimov/TD1314/handler"
 	"github.com/BorisMustakimov/TD1314/nextdate"
 	"github.com/BorisMustakimov/TD1314/repository"
 	"github.com/BorisMustakimov/TD1314/service"
