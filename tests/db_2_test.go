@@ -6,8 +6,9 @@ import (
 	"time"
 
 	"github.com/jmoiron/sqlx"
-	_ "github.com/mattn/go-sqlite3"
+	//_ "github.com/mattn/go-sqlite3" с этит драйвером у меня не работает. ни создается не тестируется
 	"github.com/stretchr/testify/assert"
+	_ "modernc.org/sqlite" // c эитм драйвером все работает
 )
 
 type Task struct {
@@ -29,7 +30,7 @@ func openDB(t *testing.T) *sqlx.DB {
 	if len(envFile) > 0 {
 		dbfile = envFile
 	}
-	db, err := sqlx.Connect("sqlite3", dbfile)
+	db, err := sqlx.Connect("sqlite", dbfile) //драйвер изменен
 	assert.NoError(t, err)
 	return db
 }
