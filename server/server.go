@@ -5,6 +5,12 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/BorisMustakimov/TD1314/config"
+	hendlers "github.com/BorisMustakimov/TD1314/handlers"
+	"github.com/BorisMustakimov/TD1314/nextdate"
+	"github.com/BorisMustakimov/TD1314/repository"
+	"github.com/BorisMustakimov/TD1314/service"
+	sqltable "github.com/BorisMustakimov/TD1314/sql_table"
 	"github.com/go-chi/chi/v5"
 	"github.com/jmoiron/sqlx"
 )

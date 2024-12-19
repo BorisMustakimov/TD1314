@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/BorisMustakimov/TD1314/server"
 )
 
 func main() {

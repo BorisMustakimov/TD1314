@@ -5,6 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/BorisMustakimov/TD1314/config"
 	"github.com/jmoiron/sqlx"
 	_ "modernc.org/sqlite"
 )
